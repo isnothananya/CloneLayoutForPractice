@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Yellowtail&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container {
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 0 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+
+}
+
+header {
+    text-align: center;
+    padding: 4rem;
+
+}
+header h3 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 7rem;
+    color: skyblue;
+}
+
+header h1 {
+    font-family: 'Paytone One', sans-serif;
+    text-transform: uppercase;
+    font-size: 15rem;
+    margin-top: -6rem;
+    letter-spacing: 5px;
+}
+
+header p {
+    font-size: 1.8rem;
+    margin-top: -1rem;
+    font-weight: 300;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+}
+
+.section-wrapper {
+    width: 100vh;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.topic-box {
+    width: 50%;
+    display: flex;
+    z-index: 1;
+    position: relative;
+}
+
+.topic p {
+
+    font-weight: bold;
+    font-size: 2.5rem;
+    transform: rotate(90deg) translateX(30%) ;
+    
+}
+
+
+.topic-left .line {
+    width: .4rem;
+    height: 16rem;
+    background-color: black;
+    left: 3.5rem;
+    top: 10rem;
+    position: absolute;
+    
+}
+
+
+.topic-right .line {
+    width: .4rem;
+    height: 16rem;
+    background-color: black;
+    right: 5rem;
+    top: 10rem;
+    position: absolute;
+    
+}
+
+
+
+.content-img img {
+    width: 100%;
+    
+}
+
+.content-bg-color-left {
+    position: absolute;
+    width: 61%;
+    height: 10rem;
+    background-color: skyblue;
+    align-self: flex-end;
+    bottom: 2%;
+    left: -10%;
+  
+}
+
+.content-box {
+    width: 50%;
+    padding: 0 0 0 4rem ;
+}
+
+.content-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.content-topic p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: .5rem;
+}
+
+.content-detail p {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    
+}
+
+/* section -right */
+
+.section-right .section-wrapper , .section-right .topic-box , .line {
+    flex-direction: row-reverse;
+}
+
+.content-bg-color-right {
+    position: absolute;
+    width: 51%;
+    height: 10rem;
+    background-color: skyblue;
+    align-self: flex-end;
+    bottom: 2%;
+    right: 0;
+  
+}
+
+
+
+/* bg color  */
+
+.bg-color-2 {background-color: rgb(248, 194, 188);}
+.bg-color-3 {background-color:  #b1afaf;}
+.bg-color-4 {background-color: rgb(255, 222, 132);}
+
+
+@media (max-width: 740px) {
+    header h3 {
+        font-size: 5rem;
+
+    }
+    
+    header h1 {
+        font-size: 10rem;
+        margin-top: -4rem;
+        letter-spacing: 5px;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+        margin-top: -1rem;
+        font-weight: 300;
+    }
+    
+.content-box {
+    width: 50%;
+    padding: 0 2rem ;
+}
+   
+.content-number {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.content-topic p {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: .5rem;
+}
+
+.content-detail p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.4rem;
+    
+}
+
+.content-bg-color-left ,.content-bg-color-right   {
+    position: absolute;
+    width: 62%;
+    height: 7rem;
+   
+}
+    
+
+    .line {
+        display: none;
+    }
+
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Chivo' , sans-serif;
+    padding: 1rem;
+    
+}
+
+section {
+    display: flex;
+    width: 100%; 
+    border: 2px solid black; 
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50px;
+    border: 2px solid black;
+    padding: .5rem;
+    
+}
+
+.logo h1 , .cart h1 {
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul li {
+    list-style: none; 
+    padding: 0 1rem;
+  
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-left {
+    width: 40%;
+}
+
+.main-topic{
+ width: 100%;
+ background-color: coral;
+ font-size: 3rem;
+}
+
+.container-center {
+    width: 20%;
+}
+
+
+.container-right {
+    width: 40%;
+}

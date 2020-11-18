@@ -4,19 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: black;
     font-family: 'Chivo' , sans-serif;
-    padding: 1rem;
+    padding: .2rem;
+    
     
 }
 
+.container {
+    max-width: 1366px;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
 section {
-    display: flex;
-    width: 100%; 
-    border: 2px solid black; 
+  width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(3, 45% 10% 45%);
 }
 
 .header {
@@ -24,18 +32,20 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 50px;
-    border: 2px solid black;
-    padding: .5rem;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+
     
 }
 
 .logo h1 , .cart h1 {
     font-size: 1rem;
+    outline: 1px solid #000000;
+    padding: .5rem;
 }
 
 nav {
-    display: flex;
+    
    
 }
 
@@ -43,11 +53,17 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    
+    
 }
 
 nav ul li {
     list-style: none; 
     padding: 0 1rem;
+    outline: 1px solid #000000;
+    outline-offset: -1px ;
+    padding: .5rem 1rem;
+    
   
 }
 
@@ -57,20 +73,141 @@ nav ul li a {
 }
 
 .container-left {
-    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    outline: 1px solid black;
+    outline-offset: -1px;
+     
 }
 
 .main-topic{
- width: 100%;
- background-color: coral;
- font-size: 3rem;
+    width: 100%;
+    font-size: 3rem;
+    background-color: rgb(253, 103, 48);
+    outline: 1px solid black;
+    outline-offset: -1px;
+    padding: .5rem;
+}
+
+.planer__box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    outline: 1px solid black;
+    outline-offset: -1px;
+
+    
+}
+
+.planer {
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    outline: 1px solid black;
+    outline-offset: -1px;
+  
+   
+}
+
+.planer__date {
+    font-size: 1.5rem;
+    padding: .5rem;
+    outline: 1px solid black;
+    outline-offset: -1px;
+
+}
+
+.planer__detail__box {
+    padding: .5rem;
+    font-size: .5rem;
+    outline: 1px solid black;
+    outline-offset: -1px;
+}
+
+.planer__detail__box p {
+    margin: .3rem 0;
+    text-justify: auto;
+}
+
+.planer__detail__schedule {
+    display: flex;
+    align-items: center;
+}
+
+.date{
+    padding: 0 .3rem 0 0;
+}
+
+.timetable {
+    letter-spacing: .5px;
 }
 
 .container-center {
-    width: 20%;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, 60% 30% 10%);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    
+   
+}
+
+.container-center h1 {
+    width: 100%;
+    font-size: 2rem;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 3%;
+   
+   
+}
+   
+ 
+}
+
+.planer__detail__schedule {
+
+}
+
+.center__topic {
+
+}
+
+.center__topic__detail {
+    
+    height: auto;
+    font-size: .5rem;
+    padding: .5rem;
+    outline: 1px solid black;
+    outline-offset: -1px;
+}
 }
 
 
 .container-right {
-    width: 40%;
+    
+    background-color: burlywood;
+    
+}
+
+
+
+.ft__top {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    outline: 1px solid black;
+    outline-offset: -1px;
+}
+
+.ft__bottom {
+    width: 100%;
+    background-color: #000000;
+    font-size: 2.5rem;
+    color: white;
+    padding: .5rem;
 }

@@ -17,25 +17,16 @@ body {
 
 .container {
     max-width: 1366px;
-    height: 100vh;
     background-color: #f1f1f1;
 }
 
-section {
-  width: 100%; 
-    display: grid;
-    grid-template-columns: repeat(3, 45% 10% 45%);
-}
-
-.header {
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     outline: 1px solid #000000;
     outline-offset: -1px;
-
-    
 }
 
 .logo h1 , .cart h1 {
@@ -44,17 +35,13 @@ section {
     padding: .5rem;
 }
 
-nav {
-    
-   
-}
+
+/* ==================== NAV BAR ========================== */
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    
-    
+    align-items: flex-end;   
 }
 
 nav ul li {
@@ -63,138 +50,230 @@ nav ul li {
     outline: 1px solid #000000;
     outline-offset: -1px ;
     padding: .5rem 1rem;
-    
-  
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
+nav ul li:hover {
+background-color: #000000;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ==================== CONTENT ========================== */
+
+section {
+    width: 100%; 
+    height: 80vh;
+    display: flex;   
+}
+
+
+/* ==================== LEFT ========================== */
 .container-left {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,1fr);
-    outline: 1px solid black;
-    outline-offset: -1px;
-     
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.main-topic{
+.main-topic {
     width: 100%;
-    font-size: 3rem;
-    background-color: rgb(253, 103, 48);
-    outline: 1px solid black;
+    height: 100%;
+    outline: 1px solid #000000;
     outline-offset: -1px;
-    padding: .5rem;
+}
+
+.main-topic h1 {
+    font-size: 70px;
+    padding: 0 10px;
+    background-color: rgb(255, 105, 36);
 }
 
 .planer__box {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    outline: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    outline: 1px solid #000000;
     outline-offset: -1px;
-
-    
 }
 
 .planer {
+    
     display: flex;
     flex-direction: column;
-    font-size: .8rem;
-    outline: 1px solid black;
+    outline: 1px solid #000000;
     outline-offset: -1px;
-  
-   
+    
 }
 
 .planer__date {
-    font-size: 1.5rem;
-    padding: .5rem;
-    outline: 1px solid black;
-    outline-offset: -1px;
-
+    outline: 1px solid #000000;
+    outline-offset: -1px; 
+    font-size: 22px;
+    padding: .6rem;
 }
 
 .planer__detail__box {
-    padding: .5rem;
-    font-size: .5rem;
-    outline: 1px solid black;
+    outline: 1px solid #000000;
     outline-offset: -1px;
 }
 
-.planer__detail__box p {
-    margin: .3rem 0;
-    text-justify: auto;
+.planer__detail {
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+    padding: .8rem;
+    font-size: 12px;
 }
 
 .planer__detail__schedule {
     display: flex;
-    align-items: center;
+    font-size: 10px;
+    padding: .5rem 0 0 0;
+
 }
 
-.date{
-    padding: 0 .3rem 0 0;
+.date {
+    margin-right: .3rem;
 }
 
-.timetable {
-    letter-spacing: .5px;
-}
-
-.container-center {
-    position: relative;
-    display: grid;
-    grid-template-rows: repeat(3, 60% 30% 10%);
+.sponsor {
+    display: flex;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    outline: 1px solid black;
+    outline: 1px solid #000000;
     outline-offset: -1px;
-    
-   
 }
 
-.container-center h1 {
+.sponsor__item-1 {
+    display: flex;
+    padding: 1rem .5rem;
+    width: 50%;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+}
+
+.sponsor__item-2 {
+    width: 25%;
+    padding: 1rem .5rem;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+}
+
+/* ==================== CENTER ========================== */
+.container-center {
+    width: 10%;
+   height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+    
+}
+
+.center__topic__box {
     width: 100%;
-    font-size: 2rem;
-    transform: rotate(90deg);
+    height: 52%;
+    position: relative;
+    background-color: black;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+}
+
+.center__topic h1 {
     position: absolute;
-    top: 3%;
-   
-   
-}
-   
- 
-}
-
-.planer__detail__schedule {
-
+    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:white;
+    font-size: 70px;
+    top: 35%;
+    left: -40%;
+    transform: rotate(90deg);
 }
 
-.center__topic {
-
-}
-
-.center__topic__detail {
-    
-    height: auto;
-    font-size: .5rem;
-    padding: .5rem;
-    outline: 1px solid black;
+.center__topic__detail{ 
+    height: 13rem;
+    padding: .8rem;
+    font-size: 12px;
+    outline: 1px solid #000000;
     outline-offset: -1px;
 }
+.center__topic__detail p {
+ margin-bottom: .5rem;
+}
+
+.center__item__bottom {
+    padding: 1rem .5rem;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
 }
 
 
-.container-right {
+/* ==================== RIGHT ========================== */
+.container-right{
+    width: 45%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: 50px 1fr 1fr;
     
-    background-color: burlywood;
+
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+}
+
+.right__topic {
+    grid-column: 1/3;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+    padding: .5rem;
+    font-size:30px;
+   
     
+  
+}
+
+.picture-1  {
+    grid-column: 3/5;
+    grid-row: 1/3;
+
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+
+}
+.picture-2  {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    outline: 1px solid #000000;
+    outline-offset: -1px;
+}
+
+.picture-3  {
+    grid-column: 2/5;
+    grid-row: 3/4;
+    outline: 1px solid #000000;
+    outline-offset: -1px; 
 }
 
 
+.container-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+/* ==================== FOOTER ========================== */
 
 .ft__top {
     display: flex;
@@ -207,7 +286,7 @@ nav ul li a {
 .ft__bottom {
     width: 100%;
     background-color: #000000;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: white;
-    padding: .5rem;
+    padding: .2rem;
 }

@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-around; */
+    border: 1px solid black;
+    height: 5%;
+    padding: 10px;
+}
+
+input {
+    text-align: center;
+}
+
+.srch-box {
+    position: absolute;
+    right: 20px;
+
+    
+}
+
+.srch-box input ,button {
+    width: 75%;
+    padding: 7px;  
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.srch-box button{
+    width: 25%;
+    background-color: white;
+    color: black;
+    float:right;
+}
+
+/* HEADER */
+header {
+    background-image: url(https://images.unsplash.com/photo-1546513246-e6db341be2b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position: bottom;
+    width: 100%;
+    height: 675px;
+}
+
+.title-1 {
+    font-size: 100px;
+}
+
+.title-2 {
+    margin-left: 15px;
+    margin-top: -25px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.title-1, .title-2 { 
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.ab-line {
+    background-color: black;
+    width: 8px;
+    height: 90px;
+    float: left;
+    margin-right: 10px;
+}
+.about-box {
+    width: 30%;
+    height: 200px;
+    margin: 5%;
+}
+
+.about {
+    font-size: 100px;
+   
+}
+
+.travel-box {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+    padding: 5%;
+    color: white;
+}
+
+.travel {
+    font-size: 100px;
+}
+
+.tv-text-1 {
+    width: 35%;
+    height: 200px;
+    letter-spacing: 1px; 
+    line-height: 1.4;
+   text-align: justify;
+    
+}
+
+.tv-text-2 {
+   float: right;
+   position: relative;
+   right: 70px; 
+   letter-spacing: 2px;   
+   line-height: 1.4;
+   top: 100px;
+   text-align: justify;
+
+   
+}
+
+.tv-phobox {
+    display: flex;
+    box-sizing:  border-box;
+    width: 100%;
+    height: 75%;
+
+
+}
+
+.tv-row1 {
+   
+    box-sizing:  border-box;
+    width: 25%;
+    height: 100%;
+
+    
+   
+}
+
+.tv-row2 {
+    display: flex;
+    box-sizing:  border-box;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: -150px;
+    width: 25%;
+    height: 100%;
+}
+
+.tv-pho1 {
+    
+    background-image: url(https://images.unsplash.com/photo-1565466570373-43637fb0f433?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: -100px;
+    
+
+}
+
+.tv-pho2 {
+   
+    background-image: url(https://images.unsplash.com/photo-1588847938486-d94437a62e66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 100%;
+
+}
+
+.tv-pho3 {
+    background-image: url(https://images.unsplash.com/photo-1577125708932-71302cca5a2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=676&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}
+.tv-pho4 {
+    background-image: url(https://images.unsplash.com/photo-1596857505610-340e07196ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 250px;
+    
+    
+
+}
+.tv-pho5 {
+    background-image: url(https://images.unsplash.com/photo-1558137554-612b2032f0ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    
+    
+}
+
+.tv-pho6 {
+    background-image: url(https://images.unsplash.com/photo-1569075884763-6fdf38e05e11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=617&q=80);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: -200px;
+   
+}
+
+.header2 {
+    
+    width: 100%;
+    height: 350px;
+    background-image: url(https://images.unsplash.com/photo-1452960962994-acf4fd70b632?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-box {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+
+.title-3 {
+    display: block;
+    font-size: 120px;
+    width: 60%;
+    
+}
+
+.text-3 {
+    display: block;
+    width: 40%;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.title-4 {
+    margin-top: 5%;
+    display: block;
+    font-size: 120px;
+    width: 100%;
+    letter-spacing: 10px; 
+}
+
+
+
+.text-5 {
+    display: block;
+    width:40%;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+
+.content-box2 {
+    display: flex;
+    box-sizing:  border-box;
+    width: 100%;
+    height: 75%;
+    position: relative;
+    margin-top:  2%;
+    
+
+
+}
+
+.last-row {
+   display: flex;
+   flex-direction: row;
+    box-sizing:  border-box;
+    width: 100%;
+    height: 400px;
+  
+   
+}
+
+.all-last {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+    
+
+}
+
+.last-photo1 {
+    background-image: url(https://images.unsplash.com/photo-1587520313288-b7e88a7c01da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+
+}
+
+.last-photo2 {
+    background-image: url(https://images.unsplash.com/photo-1512505965932-0dbfa7e7b8c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80);
+  
+}
+.last-photo3 {
+    background-image: url(https://images.unsplash.com/photo-1545904442-59909a00497c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=630&q=80);
+ 
+}
+.last-photo4 {
+    background-image: url(https://images.unsplash.com/photo-1546975937-c436b5d858ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    
+}
+
+.line2 {
+    width: 90px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 400px;
+    z-index: 10;
+
+}
+
+.header3 {
+    
+    width: 100%;
+    height: 350px;
+    background-image: url(https://images.unsplash.com/photo-1574630716795-e7db500edf58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-6 {
+    font-size: 120px;
+    margin-top: -4%;
+    width: 100%;
+}
+
+.text-6 {
+    width: 50%;
+}
+
+.social-box {
+    margin-left: 5%;
+    margin-bottom: 2%;
+    margin-top: -2%;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}

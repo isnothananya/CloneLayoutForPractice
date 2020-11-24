@@ -38,6 +38,7 @@ const highlightMenu = () => {
     if(elem && window.innerWidth < 960 && scrollPos < 600 || elem) {
         elem.classList.remove('highlight')
     }
+    
 
 }
 
@@ -56,3 +57,4 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
